@@ -2,6 +2,7 @@ body{
     display: flex;
     justify-content: center;
 }
+
 .skeleton {
   display: flex;
   flex-direction: column;
@@ -25,15 +26,19 @@ body{
 
 .buttons {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
+  flex-direction: row-reverse;
   
 }
 
 .operations, .numbers {
   display: flex;
   flex-direction: column;
+}
 
+.operations button {
+    background-color: orange;
 }
 
 button {
