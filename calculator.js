@@ -3,16 +3,35 @@ const display = document.querySelector('.display')
 
 let displayValue = '0';
 
+let firstVal = null;
+let secondVal = null;
+
+
+
+
 
 function updateDisplayValue(value) {
     displayValue = value;
-    display.textContent = value;
+    firstVal = display.textContent;
+    if(firstval !== null) {
+        secondVal = display.textContent;
+    }
   }
   
   document.querySelectorAll('.numbers button').forEach(button => {
     button.addEventListener('click', () => {
       const buttonText = button.textContent;
       
+      if ()
+
+
+
+
+
+
+
+
+
       if (buttonText === 'C') {
         displayValue = '0';
         updateDisplayValue(displayValue);
@@ -25,7 +44,8 @@ function updateDisplayValue(value) {
       else {
         if (displayValue === '0') {
           displayValue = buttonText;
-        } else {
+        } 
+        else {
           displayValue += buttonText;
         }
         updateDisplayValue(displayValue);
@@ -49,14 +69,6 @@ function divide (a , b) {
     return a / b;
 }
 
-
-console.log(add(4, 6));
-console.log(subtract(4, 6));
-console.log(multiply(4, 6));
-console.log(divide(4, 6));
-
-const a = 0;
-const b = 0;
 
 function operate (a, b, operator) {
     a = Number(a)
